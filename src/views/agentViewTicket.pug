@@ -1,6 +1,33 @@
 extends layout.pug
 block variables
-    - var title = "View Ticket"
+    - var title = "View Ticket #123"
 block content
-    div(class="font-semibold font-title") This is our first tab
-    p Welcome to Microsoft Teams Hello World sample app (Node.js)
+    div(class="ticket")
+        div(class="user")
+            div(class="userImg evilKermitImg")
+            div(class="userInfo")
+                div(class="userName") Evil Kermit
+                div Email: evilkermit@muppets.com
+                div Local time: 1:37 PM
+        div(class="details")
+            div(class="ticketMsg") "The printer on the first floor exploded"
+            div(class="detail")
+                div Ticket ID
+                div #123
+            div(class="detail")
+                div Status
+                select
+                    option Open
+                    option Closed
+                    option Pending
+                    option Local
+            div(class="detail")
+                div Created At
+                div May 13, 2019, 12:44 PM
+            div(class="detail")
+                div Last Updated
+                div May 13, 2019, 12:44 PM
+            div(class="detail")
+                div Assigned to
+                select
+                    option Evil Kermit

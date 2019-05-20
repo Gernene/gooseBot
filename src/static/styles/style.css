@@ -1,0 +1,98 @@
+html,
+body {
+    background: #faf9f8;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.title {
+    align-items: center;
+    border-bottom: 1px solid #20225c;
+    color: #20225c;
+    display: flex;
+    font-size: .8rem;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+}
+
+.title h1 {
+    margin: 0;
+}
+
+.logo {
+    height: 2rem;
+    margin: 0 .5rem 0 0;
+}
+
+.user {
+    align-items: flex-start;
+    display: flex;
+    margin: 0 0 1rem 0;
+}
+
+.userImg {
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 1rem 0 0;
+    padding: 2.5rem;
+}
+
+.evilKermitImg {
+    background-image: url("/img/evilKermit.jpg")
+}
+
+.userName {
+    color: #464775;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 0 .5rem 0;
+}
+
+.detail {
+    align-items: center;
+    display: flex;
+    margin: 0 0 .5rem 0;
+}
+
+.detail div:first-child {
+    color: #464775;
+    font-weight: bold;
+    margin: 0 1rem 0 0;
+    width: 7rem;
+}
+
+.detail div:last-child {
+    flex: 1;
+}
+
+select {  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: 1px solid #464775;
+    border-radius: .6rem;
+    color: #464775;
+    padding: .5rem ;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.selectdiv:after {
+    content: '<>';
+}
+
+.ticketMsg {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+}
