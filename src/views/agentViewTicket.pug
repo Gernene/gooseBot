@@ -16,11 +16,12 @@ block content
                 div #123
             div(class="detail")
                 div Status
-                select
-                    option Open
-                    option Closed
-                    option Pending
-                    option Local
+                div(class="selectBox")
+                    select
+                        option Open
+                        option Closed
+                        option Pending
+                        option Local
             div(class="detail")
                 div Created At
                 div May 13, 2019, 12:44 PM
@@ -29,5 +30,17 @@ block content
                 div May 13, 2019, 12:44 PM
             div(class="detail")
                 div Assigned to
-                select
-                    option Evil Kermit
+                div(class="selectBox")
+                    select
+                        option Evil Kermit
+        div(class="chatTitle") Respond to Ticket
+        div(class="chat")
+            div(class="chatItem chatMe")
+                div(class="chatImg evilKermitImg")
+                div(class="chatMsg") heyyy
+            div(class="chatItem")
+                div(class="chatImg evilKermitImg")
+                div(class="chatMsg") heyyy
+        form(class="chatNew")
+            input(type="text", placeholder="New message..")
+            input(type="submit", value="Submit")

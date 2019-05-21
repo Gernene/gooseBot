@@ -15,8 +15,8 @@ body {
 
 .title {
     align-items: center;
-    border-bottom: 1px solid #20225c;
-    color: #20225c;
+    border-bottom: 1px solid #464775;
+    color: #464775;
     display: flex;
     font-size: .8rem;
     margin: 0 0 1rem 0;
@@ -35,6 +35,10 @@ body {
 .user {
     align-items: flex-start;
     display: flex;
+    margin: 0 0 2rem 0;
+}
+
+.userInfo div:nth-child(2) {
     margin: 0 0 1rem 0;
 }
 
@@ -49,17 +53,22 @@ body {
     background-image: url("/img/evilKermit.jpg")
 }
 
-.userName {
+.userName,
+.chatTitle {
     color: #464775;
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 1rem 0;
+}
+
+.details {
+    margin: 0 0 2rem 0;
 }
 
 .detail {
     align-items: center;
     display: flex;
-    margin: 0 0 .5rem 0;
+    margin: 0 0 1rem 0;
 }
 
 .detail div:first-child {
@@ -81,18 +90,118 @@ select {
     border: 1px solid #464775;
     border-radius: .6rem;
     color: #464775;
-    padding: .5rem ;
+    padding: .5rem 2rem .5rem .5rem;
+    transition: all .3s ease;
+}
+
+select:hover {
+    background: #f3f2f1;
+    cursor: pointer;
 }
 
 select::-ms-expand {
     display: none;
 }
 
-.selectdiv:after {
-    content: '<>';
+.selectBox {
+    position: relative;
+}
+
+.selectBox:after {
+    content: '>';
+    margin: -.5rem 0 0 -1rem;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .ticketMsg {
     font-size: 1.2rem;
+    margin: 0 0 2rem 0;
+}
+
+.chat {
+    background: #f3f2f1;
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.chatNew {
+    background: #faf9f8;
+    border: 1px solid #464775;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.chatNew input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chatNew input[type="text"] {
+    background: none;
+    border: none;
+    flex: 1;
+    padding: .5rem;
+}
+
+.chatNew input[type="submit"] {
+    background: #464775;
+    color: #fff;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+}
+
+.chatNew input[type="submit"]:hover {
+    background: #2e2f54;
+    cursor: pointer;
+}
+
+.chatImg {
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 1rem 0 0;
+    padding: 1.5rem;
+}
+
+.chatItem {
+    align-items: flex-start;
+    display: flex;
     margin: 0 0 1rem 0;
+}
+
+.chatItem:last-child {
+    margin: 0;
+}
+
+.chatMsg {
+    background: #faf9f8;
+    border: 1px solid #464775;
+    border-radius: 1rem;
+    color: #464775;
+    flex: 1;
+    padding: 1rem;
+}
+
+.chatItem.chatMe {
+    flex-direction: row-reverse;
+}
+
+.chatItem.chatMe .chatImg {
+    margin: 0 0 0 1rem;
+}
+
+.chatItem.chatMe .chatMsg {
+    background: #464775;
+    border: none;
+    color: #fff;
 }
